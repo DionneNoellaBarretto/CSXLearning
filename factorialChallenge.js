@@ -5,12 +5,9 @@
 
 function factorial(num) { 
 
-    for (var i = num; i < num; i-- ) {
-        var fact = num*(num-i);
-        console.log(fact);
-    }
+
 }
-    return factorial();
+
 // To check if you've completed the challenge, uncomment these console.logs!
 console.log(factorial(4)); // -> 24
 console.log(factorial(6)); // -> 720
