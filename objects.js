@@ -29,3 +29,54 @@ const checkObj = {
     // console.log(`${foundNum}: ${checkObj[foundNum]}`);
     found =1;
   }
+
+/*   Challenge: Objects - Iterating with for... in
+You are provided with an empty array called objToArray. Using a for... in loop, fill the array with all of the numbers from the checkObj object if they are greater than or equal to 2. */
+
+const checkObj = {
+    oddNum: 1,
+    evenNum: 2,
+    foundNum: 5,
+    randomNum: 18
+  };
+  
+  const objToArray = [];
+  // ADD CODE HERE
+  
+    for(var i in checkObj){
+      if(checkObj[i]>=2){
+          objToArray.push(checkObj[i]);
+    }
+  }
+  console.log(objToArray);
+
+
+  /* Challenge: Objects - Iterating with a for loop
+This time, use the Object.values() method to return an array of checkObj's values, and assign this array to a constant called objToArray. Next, use a for loop to iterate through objToArray and determine if any of the numbers are divisible by 6. If so, reassign the value of divBy6 to true.
+  */
+
+  const checkObj = {
+    oddNum: 1,
+    evenNum: 2,
+    foundNum: 5,
+    randomNum: 18
+  };
+  
+  let divBy6 = false;
+  // ADD CODE HERE
+  
+  let objToArray = Object.values(checkObj);
+  
+  for (var i=0; i<objToArray.length;i++)
+  {
+  if( (objToArray[i]) % 6 == 0){
+    divBy6 =true;
+  }
+  }
+  console.log(objToArray, divBy6);
+  
+
+  /* Challenge: Objects - Nested Arrays
+You are provided with an empty array called nestedArr. Using a for loop starting at index 0, add 5 subarrays to nestedArr, with each nested array containing the string 'loop' concatenated with the corresponding index in nestedArr as its first element, and the index as its second element.
+
+Example of a subarray: ['loop3', 3].*/
