@@ -92,6 +92,12 @@ console.log(nestedArr);
 /*Challenge: Objects - Adding Properties
 You are provided with an array, possibleIterable. Using a for loop, build out the object divByThree so that each key is an element of possibleIterable that is divisible by three. The value of each key should be the array index at which that key can be found in possibleIterable.*/
 
+
+
+/* ---
+Challenge: Objects - Evaluating Keys
+You are given an object called sumMe containing several key/value pairs and a variable called total whose initial value is 0. Using a for... in loop, iterate through the keys of sumMe; if the value corresponding to a key is a number, add it to total. */
+
 const sumMe = {
     hello: 'there',
     you: 8,
