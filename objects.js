@@ -80,3 +80,57 @@ This time, use the Object.values() method to return an array of checkObj's value
 You are provided with an empty array called nestedArr. Using a for loop starting at index 0, add 5 subarrays to nestedArr, with each nested array containing the string 'loop' concatenated with the corresponding index in nestedArr as its first element, and the index as its second element.
 
 Example of a subarray: ['loop3', 3].*/
+
+const nestedArr = [];
+// ADD CODE HERE
+for (var i=0;i<5;i++){
+  nestedArr[i] = ["loop" + [i], i];
+}
+
+console.log(nestedArr);
+
+/*Challenge: Objects - Adding Properties
+You are provided with an array, possibleIterable. Using a for loop, build out the object divByThree so that each key is an element of possibleIterable that is divisible by three. The value of each key should be the array index at which that key can be found in possibleIterable.*/
+
+const sumMe = {
+    hello: 'there',
+    you: 8,
+    are: 7,
+    almost: '10',
+    done: '!'
+  };
+
+  var x = (Object.values(sumMe));
+  
+  let total = 0;
+
+for (var i in x){
+    if(typeof(x[i]) == "number") {
+      total += x[i];
+    }
+  }console.log(total);
+
+// Simply using a for loop:
+/*
+const sumMe = {
+  hello: 'there',
+  you: 8,
+  are: 7,
+  almost: '10',
+  done: '!'
+};
+console.log(typeof(Object.values(sumMe[2])))
+var x = (Object.values(sumMe));
+
+let total = 0;
+ADD CODE HERE
+        console.log(total);
+for (var i=0; i<x.length ;i++){
+  typeof(Object.values(sumMe)[i]) !== "string"
+  (typeof(Object.values(sumMe)[i]) === "number")
+  if(typeof(x[i]) == "number") {
+    total += x[i];
+  }
+}
+      console.log(total);
+*/
