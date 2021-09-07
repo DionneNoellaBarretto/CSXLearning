@@ -63,6 +63,18 @@ Hint: Remember that each character/letter in a string has an index position that
   lastLetter("goodbye!") //=> "!"
   lastLetter("ZeltoiD") //=> "D"
   lastLetter("Testing Another") // "r"
+
+  // similarly another solution: 
+  // function lastLetter(word) {
+ 
+  //       return(word[word.length-1]);
+  // }
+  
+  // Uncomment the lines below to test your code
+  // console.log(lastLetter("hello")); //=> "o"
+  // console.log(lastLetter("goodbye!")); //=> "!"
+  // console.log(lastLetter("ZeltoiD")); //=> "D"
+  // console.log(lastLetter("I love Javascript")); //=> "t"
   
   
   /* ========== *
